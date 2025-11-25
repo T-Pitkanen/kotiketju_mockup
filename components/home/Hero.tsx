@@ -10,7 +10,7 @@ interface HeroProps {
 }
 
 export function Hero({ popularCities = [] }: HeroProps) {
-  const [activeTab, setActiveTab] = useState("Buy");
+  const [activeTab, setActiveTab] = useState("Osta");
   const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -26,22 +26,25 @@ export function Hero({ popularCities = [] }: HeroProps) {
     const bathrooms = formData.get("bathrooms") as string;
     const listingType = formData.get("listingType") as string;
     
-    if (search) params.append("search", search);
-    if (city) params.append("city", city);
-    if (minPrice) params.append("minPrice", minPrice);
-    if (maxPrice) params.append("maxPrice", maxPrice);
-    if (bedrooms) params.append("bedrooms", bedrooms);
-    if (bathrooms) params.append("bathrooms", bathrooms);
-    if (listingType) params.append("listingType", listingType);
+    console.log('Form submitted:', { search, city, minPrice, maxPrice, bedrooms, bathrooms, listingType });
     
+    if (search && search.trim()) params.append("search", search);
+    if (city && city.trim()) params.append("city", city);
+    if (minPrice && minPrice.trim()) params.append("minPrice", minPrice);
+    if (maxPrice && maxPrice.trim()) params.append("maxPrice", maxPrice);
+    if (bedrooms && bedrooms.trim()) params.append("bedrooms", bedrooms);
+    if (bathrooms && bathrooms.trim()) params.append("bathrooms", bathrooms);
+    if (listingType && listingType.trim()) params.append("listingType", listingType);
+    
+    console.log('Navigating to:', `/properties?${params.toString()}`);
     router.push(`/properties?${params.toString()}`);
   };
 
   const handlePopularSearch = (city: string) => {
     const params = new URLSearchParams();
     params.append("city", city);
-    if (activeTab === "Buy") params.append("listingType", "For Sale");
-    if (activeTab === "Rent") params.append("listingType", "For Rent");
+    if (activeTab === "Osta") params.append("listingType", "Myynnissä");
+    if (activeTab === "Vuokraa") params.append("listingType", "Vuokrattavana");
     router.push(`/properties?${params.toString()}`);
   };
 
@@ -52,7 +55,7 @@ export function Hero({ popularCities = [] }: HeroProps) {
   return (
     <section className="relative overflow-hidden">
       {/* Background Image */}
-      <div className="relative h-[700px] sm:h-[650px] md:h-[600px]">
+      <div className="relative h-[750px] sm:h-[700px] md:h-[650px]">
         <Image
           src="https://images.unsplash.com/photo-1693382464188-1ed395d8d3e1?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Modern house"
@@ -105,7 +108,7 @@ export function Hero({ popularCities = [] }: HeroProps) {
               <input 
                 type="hidden" 
                 name="listingType" 
-                value={activeTab === "Osta" ? "For Sale" : activeTab === "Vuokraa" ? "For Rent" : ""}
+                value={activeTab === "Osta" ? "Myynnissä" : activeTab === "Vuokraa" ? "Vuokrattavana" : ""}
               />
 
               {/* Search Input */}

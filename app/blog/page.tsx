@@ -9,7 +9,7 @@ export default async function BlogPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <section className="relative py-20 md:py-32 overflow-hidden">
+      <section className="relative py-16 overflow-hidden">
         <div 
           className="absolute inset-0 z-0"
           style={{
@@ -22,12 +22,12 @@ export default async function BlogPage() {
         />
         <div className="absolute inset-0 bg-black/60 z-0" />
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Kiinteistötietoa & Uutisia
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Tutustu uusimpiin trendeihin, näkemyksiin ja innovaatioihin blockchain-pohjaisessa kiinteistöliiketoiminnassa
             </p>
           </div>
@@ -98,7 +98,7 @@ export default async function BlogPage() {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-4 mb-4">
-                    <span className="px-3 py-1 text-sm font-semibold rounded-full" style={{ backgroundColor: '#f59e0b', color: '#f5f5f5' }}>
+                    <span className="px-3 py-1 text-sm font-semibold rounded-full" style={{ backgroundColor: '#284b63', color: '#f5f5f5' }}>
                       {post.category}
                     </span>
                     <span className="text-sm text-gray-500">{post.date}</span>

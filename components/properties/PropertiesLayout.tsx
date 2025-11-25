@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { FavoriteButton } from "../ui/FavoriteButton";
@@ -54,6 +55,18 @@ interface PropertiesLayoutProps {
 
 export function PropertiesLayout({ properties, isLoggedIn, searchParams, cities, currentPage, totalPages, totalCount }: PropertiesLayoutProps) {
   const [showFilters, setShowFilters] = useState(false);
+  const router = useRouter();
+  const currentSearchParams = useSearchParams();
+
+  const clearFilter = (filterName: string) => {
+    const params = new URLSearchParams(currentSearchParams.toString());
+    params.delete(filterName);
+    if (filterName === 'minPrice' || filterName === 'maxPrice') {
+      params.delete('minPrice');
+      params.delete('maxPrice');
+    }
+    router.push(`/properties?${params.toString()}`);
+  };
 
   return (
     <div className="flex h-[calc(100vh-80px)] relative bg-gray-50">
@@ -80,7 +93,12 @@ export function PropertiesLayout({ properties, isLoggedIn, searchParams, cities,
                   </Link>
                 </div>
 
-                <form method="GET" action="/properties" className="space-y-6">
+                <form 
+                  key={currentSearchParams.toString()} 
+                  method="GET" 
+                  action="/properties" 
+                  className="space-y-6"
+                >
             {/* Location */}
             <div>
               <div className="flex items-center justify-between mb-3">
@@ -91,7 +109,7 @@ export function PropertiesLayout({ properties, isLoggedIn, searchParams, cities,
                   </svg>
                   Sijainti
                 </label>
-                <button type="button" className="text-gray-400 hover:text-gray-600">
+                <button type="button" onClick={() => clearFilter('city')} className="text-gray-400 hover:text-gray-600">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -120,7 +138,7 @@ export function PropertiesLayout({ properties, isLoggedIn, searchParams, cities,
                   </svg>
                   Hintaluokka
                 </label>
-                <button type="button" className="text-gray-400 hover:text-gray-600">
+                <button type="button" onClick={() => clearFilter('minPrice')} className="text-gray-400 hover:text-gray-600">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -131,7 +149,7 @@ export function PropertiesLayout({ properties, isLoggedIn, searchParams, cities,
                   type="number"
                   name="minPrice"
                   defaultValue={searchParams.minPrice}
-                  placeholder="Min (€10K)"
+                  placeholder="Min"
                   min="0"
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
                 />
@@ -139,7 +157,7 @@ export function PropertiesLayout({ properties, isLoggedIn, searchParams, cities,
                   type="number"
                   name="maxPrice"
                   defaultValue={searchParams.maxPrice}
-                  placeholder="Max (€50K)"
+                  placeholder="Max"
                   min="0"
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
                 />
@@ -155,7 +173,7 @@ export function PropertiesLayout({ properties, isLoggedIn, searchParams, cities,
                   </svg>
                   Kohteen tyyppi
                 </label>
-                <button type="button" className="text-gray-400 hover:text-gray-600">
+                <button type="button" onClick={() => clearFilter('listingType')} className="text-gray-400 hover:text-gray-600">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -167,8 +185,8 @@ export function PropertiesLayout({ properties, isLoggedIn, searchParams, cities,
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
               >
                 <option value="">Kaikki tyypit</option>
-                <option value="myynti">Myytävänä</option>
-                <option value="vuokra">Vuokrattavana</option>
+                <option value="Myynnissä">Myytävänä</option>
+                <option value="Vuokrattavana">Vuokrattavana</option>
               </select>
             </div>
 

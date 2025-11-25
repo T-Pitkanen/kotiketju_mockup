@@ -29,16 +29,22 @@ export default async function PropertiesPage(props: {
   }
 
   if (searchParams.city && searchParams.city.trim()) {
-    where.city = searchParams.city;
+    where.city = { contains: searchParams.city, mode: "insensitive" };
   }
 
   if (searchParams.minPrice || searchParams.maxPrice) {
     where.price = {};
     if (searchParams.minPrice) {
-      where.price.gte = parseFloat(searchParams.minPrice);
+      const minPrice = parseFloat(searchParams.minPrice);
+      if (!isNaN(minPrice)) {
+        where.price.gte = minPrice;
+      }
     }
     if (searchParams.maxPrice) {
-      where.price.lte = parseFloat(searchParams.maxPrice);
+      const maxPrice = parseFloat(searchParams.maxPrice);
+      if (!isNaN(maxPrice)) {
+        where.price.lte = maxPrice;
+      }
     }
   }
 
@@ -51,7 +57,7 @@ export default async function PropertiesPage(props: {
   }
 
   if (searchParams.listingType && searchParams.listingType.trim()) {
-    where.listingType = searchParams.listingType;
+    where.listingType = { contains: searchParams.listingType, mode: "insensitive" };
   }
 
   // Pagination

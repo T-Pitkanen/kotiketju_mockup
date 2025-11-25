@@ -148,7 +148,7 @@ export const mockProperties: Property[] = [
     city: 'Helsinki',
     state: 'Uusimaa',
     zipCode: '00100',
-    country: 'Finland',
+    country: 'Suomi',
     propertyType: 'Asunto',
     listingType: 'Myynnissä',
     bedrooms: 3,
@@ -180,9 +180,9 @@ export const mockProperties: Property[] = [
     city: 'Espoo',
     state: 'Uusimaa',
     zipCode: '02100',
-    country: 'Finland',
-    propertyType: 'House',
-    listingType: 'Sale',
+    country: 'Suomi',
+    propertyType: 'Omakotitalo',
+    listingType: 'Myynnissä',
     bedrooms: 4,
     bathrooms: 2.5,
     squareFeet: 150,
@@ -216,9 +216,9 @@ export const mockProperties: Property[] = [
     city: 'Tampere',
     state: 'Pirkanmaa',
     zipCode: '33100',
-    country: 'Finland',
-    propertyType: 'Apartment',
-    listingType: 'Sale',
+    country: 'Suomi',
+    propertyType: 'Asunto',
+    listingType: 'Myynnissä',
     bedrooms: 2,
     bathrooms: 1,
     squareFeet: 65,
@@ -255,9 +255,9 @@ export const mockProperties: Property[] = [
     city: 'Helsinki',
     state: 'Uusimaa',
     zipCode: '00150',
-    country: 'Finland',
-    propertyType: 'Penthouse',
-    listingType: 'Sale',
+    country: 'Suomi',
+    propertyType: 'Kattohuoneisto',
+    listingType: 'Myynnissä',
     bedrooms: 4,
     bathrooms: 3,
     squareFeet: 180,
@@ -291,9 +291,9 @@ export const mockProperties: Property[] = [
     city: 'Turku',
     state: 'Varsinais-Suomi',
     zipCode: '20100',
-    country: 'Finland',
-    propertyType: 'House',
-    listingType: 'Sale',
+    country: 'Suomi',
+    propertyType: 'Omakotitalo',
+    listingType: 'Myynnissä',
     bedrooms: 3,
     bathrooms: 1.5,
     squareFeet: 120,
@@ -327,9 +327,9 @@ export const mockProperties: Property[] = [
     city: 'Tampere',
     state: 'Pirkanmaa',
     zipCode: '33100',
-    country: 'Finland',
-    propertyType: 'Studio',
-    listingType: 'Sale',
+    country: 'Suomi',
+    propertyType: 'Yksiö',
+    listingType: 'Myynnissä',
     bedrooms: 1,
     bathrooms: 1,
     squareFeet: 28,
@@ -363,9 +363,9 @@ export const mockProperties: Property[] = [
     city: 'Vantaa',
     state: 'Uusimaa',
     zipCode: '01300',
-    country: 'Finland',
-    propertyType: 'Townhouse',
-    listingType: 'Sale',
+    country: 'Suomi',
+    propertyType: 'Rivitaloasunto',
+    listingType: 'Myynnissä',
     bedrooms: 3,
     bathrooms: 2,
     squareFeet: 110,
@@ -399,9 +399,9 @@ export const mockProperties: Property[] = [
     city: 'Espoo',
     state: 'Uusimaa',
     zipCode: '02230',
-    country: 'Finland',
-    propertyType: 'House',
-    listingType: 'Sale',
+    country: 'Suomi',
+    propertyType: 'Omakotitalo',
+    listingType: 'Myynnissä',
     bedrooms: 4,
     bathrooms: 2,
     squareFeet: 140,
@@ -436,8 +436,8 @@ export const mockProperties: Property[] = [
     state: 'Uusimaa',
     zipCode: '02780',
     country: 'Suomi',
-    propertyType: 'omakotitalo',
-    listingType: 'myynti',
+    propertyType: 'Omakotitalo',
+    listingType: 'Myynnissä',
     bedrooms: 5,
     bathrooms: 2.0,
     squareFeet: 140,
@@ -449,8 +449,8 @@ export const mockProperties: Property[] = [
     garden: true,
     balcony: false,
     furnished: false,
-    images: ['https://plus.unsplash.com/premium_photo-1684508638760-72ad80c0055f?q=80&w=1171&auto=format&fit=crop'],
-    mainImage: 'https://plus.unsplash.com/premium_photo-1684508638760-72ad80c0055f?q=80&w=1171&auto=format&fit=crop',
+    images: ['/images/properties/prop-9.jpg'],
+    mainImage: '/images/properties/prop-9.jpg',
     published: true,
     featured: true,
     createdAt: new Date('2025-11-13T12:00:00'),
@@ -472,8 +472,8 @@ export const mockProperties: Property[] = [
     state: 'Uusimaa',
     zipCode: '02100',
     country: 'Suomi',
-    propertyType: 'kerrostalo',
-    listingType: 'myynti',
+    propertyType: 'Kerrostalo',
+    listingType: 'Myynnissä',
     bedrooms: 3,
     bathrooms: 1.0,
     squareFeet: 76,
@@ -485,8 +485,8 @@ export const mockProperties: Property[] = [
     garden: false,
     balcony: true,
     furnished: false,
-    images: ['https://images.unsplash.com/photo-1723748972084-4124765e0a55?q=80&w=1171&auto=format&fit=crop'],
-    mainImage: 'https://images.unsplash.com/photo-1723748972084-4124765e0a55?q=80&w=1171&auto=format&fit=crop',
+     images: ['/images/properties/prop-10.jpg'],
+    mainImage: '/images/properties/prop-10.jpg',
     published: true,
     featured: true,
     createdAt: new Date('2025-11-13T12:00:00'),
@@ -508,8 +508,8 @@ export const mockProperties: Property[] = [
     state: 'Uusimaa',
     zipCode: '10900',
     country: 'Suomi',
-    propertyType: 'huvila',
-    listingType: 'myynti',
+    propertyType: 'Huvila',
+    listingType: 'Myynnissä',
     bedrooms: 5,
     bathrooms: 3.0,
     squareFeet: 220,
@@ -521,8 +521,8 @@ export const mockProperties: Property[] = [
     garden: true,
     balcony: true,
     furnished: false,
-    images: ['https://images.unsplash.com/photo-1592694844266-5c03865c7bc5?q=80&w=687&auto=format&fit=crop'],
-    mainImage: 'https://images.unsplash.com/photo-1592694844266-5c03865c7bc5?q=80&w=687&auto=format&fit=crop',
+    images: ['/images/properties/prop-11.jpg'],
+    mainImage: '/images/properties/prop-11.jpg',
     published: true,
     featured: false,
     createdAt: new Date('2025-11-13T12:00:00'),
@@ -534,6 +534,254 @@ export const mockProperties: Property[] = [
     nftTokenId: 'PROP-NFT-008',
     smartContractAddress: '0x742d35Cc665A52sd25a3b844Bc454e4438f44e',
   },
+  {
+    id: 'oulu-keskusta-kerrostalo',
+    title: 'Tilava kerrostaloasunto Oulun keskustassa',
+    description: 'Valoisa ja avara kerrostaloasunto lähellä Oulun palveluita. Hyvät kulkuyhteydet ja modernit materiaalit.',
+    price: 299000,
+    address: 'Kauppurienkatu 12 A 34',
+    city: 'Oulu',
+    state: 'Pohjois-Pohjanmaa',
+    zipCode: '90100',
+    country: 'Suomi',
+    propertyType: 'Kerrostalo',
+    listingType: 'Myynnissä',
+    bedrooms: 3,
+    bathrooms: 1.0,
+    squareFeet: 85,
+    lotSize: null,
+    yearBuilt: 2010,
+    parking: 1,
+    garage: false,
+    pool: false,
+    garden: false,
+    balcony: true,
+    furnished: false,
+    images: ['/images/properties/prop-12.jpg'],
+    mainImage: '/images/properties/prop-12.jpg',
+    published: true,
+    featured: false,
+    createdAt: new Date('2025-11-13T12:00:00'),
+    updatedAt: new Date('2025-11-13T12:00:00'),
+    publishedAt: new Date('2025-11-13T12:00:00'),
+    realtorId: '101',
+    blockchainHash: '0x3c9f2a8b7e6d5c4f35a823d8c7f6e5d4c3b2a1f9e8d7c6b5a4f3e2d1c0b9a8',
+    blockchainVerified: true,
+    nftTokenId: 'PROP-NFT-008',
+    smartContractAddress: '0x742d35Cc6685CD925a3b844Bc454e4438f44e',
+  },{
+    id: 'tampere-kaleva-asunto',
+    title: 'Kodikas asunto Kalevassa',
+    description: 'Tilava ja valoisa asunto rauhallisella alueella Kalevassa. Hyvät palvelut ja kulkuyhteydet lähellä.',
+    price: 275000,
+    address: 'Kalevantie 20 B 5',
+    city: 'Tampere',
+    state: 'Pirkanmaa',
+    zipCode: '33720',
+    country: 'Suomi',
+    propertyType: 'Asunto',
+    listingType: 'Myynnissä',
+    bedrooms: 2,
+    bathrooms: 1.0,
+    squareFeet: 70,
+    lotSize: null,
+    yearBuilt: 2005,
+    parking: 1,
+    garage: false,
+    pool: false,
+    garden: false,
+    balcony: true,
+    furnished: false,
+    images: ['/images/properties/prop-13.jpg'],
+    mainImage: '/images/properties/prop-13.jpg',
+    published: true,
+    featured: false,
+    createdAt: new Date('2025-11-13T12:00:00'),
+    updatedAt: new Date('2025-11-13T12:00:00'),
+    publishedAt: new Date('2025-11-13T12:00:00'),
+    realtorId: '103',
+    blockchainHash: '0x3c9f2a8b7e6d5c4f35a823d8c7f6e5d4c3b2a1f9e8d7c6b5a4f3e2d1c0b9a8',
+    blockchainVerified: true,
+    nftTokenId: 'PROP-NFT-008',
+    smartContractAddress: '0x742d35Cc6685CD925a3b844Bc454e4438f44e',
+  },{
+    id: 'jyvaskyla-rivitalo',
+    title: 'Rivitaloasunto Jyväskylässä',
+    description: 'Tilava rivitaloasunto rauhallisella alueella Jyväskylässä. Oma piha ja hyvät säilytystilat.',
+    price: 310000,
+    address: 'Lehtikuja 3',
+    city: 'Jyväskylä',
+    state: 'Keski-Suomi',
+    zipCode: '40720',
+    country: 'Suomi',
+    propertyType: 'Rivitaloasunto',
+    listingType: 'Myynnissä',
+    bedrooms: 3,
+    bathrooms: 2.0,
+    squareFeet: 100,
+    lotSize: 250,
+    yearBuilt: 2012,
+    parking: 2,
+    garage: true,
+    pool: false,
+    garden: true,
+    balcony: true,
+    furnished: false,
+    images: ['/images/properties/prop-14.jpg'],
+    mainImage: '/images/properties/prop-14.jpg',
+    published: true,
+    featured: false,
+    createdAt: new Date('2025-11-13T12:00:00'),
+    updatedAt: new Date('2025-11-13T12:00:00'),
+    publishedAt: new Date('2025-11-13T12:00:00'),
+    realtorId: '104',
+    blockchainHash: '0x3c9f2a8b7e6d5c4f35a823d8c7f6e5d4c3b2a1f9e8d7c6b5a4f3e2d1c0b9a8',
+    blockchainVerified: true,
+    nftTokenId: 'PROP-NFT-009',
+    smartContractAddress: '0x742d35Cc6685CD925a3b844Bc454e4438f44e',
+  },{
+    id: 'lahti-kaupunkikoti',
+    title: 'Kaupunkikoti Lahdessa',
+    description: 'Moderni ja valoisa kaupunkikoti lähellä Lahden keskustaa. Hyvät palvelut ja kulkuyhteydet lähellä.',
+    price: 260000,
+    address: 'Keskuskatu 10 A 2',
+    city: 'Lahti',
+    state: 'Päijät-Häme',
+    zipCode: '15110',
+    country: 'Suomi',
+    propertyType: 'Asunto',
+    listingType: 'Myynnissä',
+    bedrooms: 2,
+    bathrooms: 1.0,
+    squareFeet: 68,
+    lotSize: null,
+    yearBuilt: 2014,
+    parking: 1,
+    garage: false,
+    pool: false,
+    garden: false,
+    balcony: true,
+    furnished: false,
+    images: ['/images/properties/prop-15.jpg'],
+    mainImage: '/images/properties/prop-15.jpg',
+    published: true,
+    featured: false,
+    createdAt: new Date('2025-11-13T12:00:00'),
+    updatedAt: new Date('2025-11-13T12:00:00'), 
+    publishedAt: new Date('2025-11-13T12:00:00'),
+    realtorId: '101',
+    blockchainHash: '0x3c9f2a8b7e6d5c4f35a823d8c7f6e5d4c3b2a1f9e8d7c6b5a4f3e2d1c0b9a8',
+    blockchainVerified: true,
+    nftTokenId: 'PROP-NFT-010',
+    smartContractAddress: '0x742d35Cc6685CD925a3b844Bc454e4438f44e',
+  },{
+    id: 'vantaa-tikkurila-asunto',
+    title: 'Tilava asunto Tikkurilassa',
+    description: 'Valoisa ja avara asunto Tikkurilan sydämessä. Hyvät palvelut ja kulkuyhteydet lähellä.',
+    price: 340000,
+    address: 'Tikkurilantie 15 B 7',
+    city: 'Vantaa',
+    state: 'Uusimaa',
+    zipCode: '01300',
+    country: 'Suomi',
+    propertyType: 'Asunto',
+    listingType: 'Myynnissä',
+    bedrooms: 3,
+    bathrooms: 1.0,
+    squareFeet:  80,
+    lotSize: null,
+    yearBuilt: 2008,
+    parking: 1,
+    garage: false,
+    pool: false,
+    garden: false,
+    balcony: true,
+    furnished: false,
+    images: ['/images/properties/prop-16.jpg'],
+    mainImage: '/images/properties/prop-16.jpg',
+    published: true,
+    featured: false,
+    createdAt: new Date('2025-11-13T12:00:00'),
+    updatedAt: new Date('2025-11-13T12:00:00'),
+    publishedAt: new Date('2025-11-13T12:00:00'),
+    realtorId: '102',
+    blockchainHash: '0x3c9f2a8b7e6d5c4f35a823d8c7f6e5d4c3b2a1f9e8d7c6b5a4f3e2d1c0b9a8',
+    blockchainVerified: true,
+    nftTokenId: 'PROP-NFT-011',
+    smartContractAddress: '0x742d35Cc6685CD925a3b844Bc454e4438f44e',
+
+  },{
+    id: 'turku-keskusta-asunto',
+    title: 'Keskusta-asunto Turussa',
+    description: 'Tilava ja valoisa asunto Turun keskustassa. Hyvät palvelut ja kulkuyhteydet lähellä.',
+    price: 280000,
+    address: 'Aurakatu 20 A 5',
+    city: 'Turku',
+    state: 'Varsinais-Suomi',
+    zipCode: '20100',
+    country: 'Suomi',
+    propertyType: 'Asunto',
+    listingType: 'Myynnissä',
+    bedrooms: 2,
+    bathrooms: 1.0,
+    squareFeet: 72,
+    lotSize: null,
+    yearBuilt: 2011,
+    parking: 1,
+    garage: false,
+    pool: false,
+    garden: false,
+    balcony: true,
+    furnished: false,
+    images: ['/images/properties/prop-17.jpg'],
+    mainImage: '/images/properties/prop-17.jpg',
+    published: true,
+    featured: false, 
+    createdAt: new Date('2025-11-13T12:00:00'),
+    updatedAt: new Date('2025-11-13T12:00:00'),
+    publishedAt: new Date('2025-11-13T12:00:00'),
+    realtorId: '103',
+    blockchainHash: '0x3c9f2a8b7e6d5c4f35a823d8c7f6e5d4c3b2a1f9e8d7c6b5a4f3e2d1c0b9a8',
+    blockchainVerified: true,
+    nftTokenId: 'PROP-NFT-012',
+    smartContractAddress: '0x742d35Cc6685CD925a3b844Bc454e4438f44e',
+  },{
+    id: 'kouvola-koti',
+    title: 'Koti Kouvolassa',
+    description: 'Tilava ja valoisa koti Kouvolan rauhallisella alueella. Hyvät palvelut ja kulkuyhteydet lähellä.',
+    price: 230000,
+    address: 'Kouvolankatu 5 A 3',
+    city: 'Kouvola',
+    state: 'Kymenlaakso',
+    zipCode: '45100',
+    country: 'Suomi',
+    propertyType: 'Asunto',
+    listingType: 'Myynnissä',
+    bedrooms: 2,
+    bathrooms: 1.0,
+    squareFeet: 66,
+    lotSize: null,
+    yearBuilt: 2009,
+    parking: 1,
+    garage: false,
+    pool: false,
+    garden: false,
+    balcony: true,
+    furnished: false,
+    images: ['/images/properties/prop-18.jpg'],
+    mainImage: '/images/properties/prop-18.jpg',  
+    published: true,
+    featured: false,
+    createdAt: new Date('2025-11-13T12:00:00'),
+    updatedAt: new Date('2025-11-13T12:00:00'),
+    publishedAt: new Date('2025-11-13T12:00:00'),
+    realtorId: '104',
+    blockchainHash: '0x3c9f2a8b7e6d5c4f35a823d8c7f6e5d4c3b2a1f9e8d7c6b5a4f3e2d1c0b9a8',
+    blockchainVerified: true,
+    nftTokenId: 'PROP-NFT-013',
+    smartContractAddress: '0x742d35Cc6685CD925a3b844Bc454e4438f44e',
+
+  }
 ];
 
 // Add realtor data to properties
@@ -679,17 +927,75 @@ export const mockDb = {
         results = results.filter(prop => {
           if (where.published !== undefined && prop.published !== where.published) return false;
           if (where.featured !== undefined && prop.featured !== where.featured) return false;
-          if (where.city && prop.city !== where.city) return false;
+          
+          // City filter - support both exact match and contains
+          if (where.city) {
+            if (typeof where.city === 'string') {
+              if (prop.city !== where.city) return false;
+            } else if (where.city.contains) {
+              const mode = where.city.mode === 'insensitive' ? 'i' : '';
+              const regex = new RegExp(where.city.contains, mode);
+              if (!regex.test(prop.city || '')) return false;
+            }
+          }
+          
           if (where.propertyType && prop.propertyType !== where.propertyType) return false;
-          if (where.listingType && prop.listingType !== where.listingType) return false;
+          
+          // ListingType filter - support both exact match and contains
+          if (where.listingType) {
+            if (typeof where.listingType === 'string') {
+              if (prop.listingType !== where.listingType) return false;
+            } else if (where.listingType.contains) {
+              const mode = where.listingType.mode === 'insensitive' ? 'i' : '';
+              const regex = new RegExp(where.listingType.contains, mode);
+              if (!regex.test(prop.listingType || '')) return false;
+            }
+          }
+          
+          // OR filter for search
+          if (where.OR) {
+            const orConditions = where.OR;
+            const matchesAny = orConditions.some((condition: Record<string, any>) => {
+              if (condition.title?.contains) {
+                const mode = condition.title.mode === 'insensitive' ? 'i' : '';
+                const escapedSearch = condition.title.contains.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const regex = new RegExp(escapedSearch, mode);
+                return regex.test(prop.title || '');
+              }
+              if (condition.description?.contains) {
+                const mode = condition.description.mode === 'insensitive' ? 'i' : '';
+                const escapedSearch = condition.description.contains.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const regex = new RegExp(escapedSearch, mode);
+                return regex.test(prop.description || '');
+              }
+              if (condition.address?.contains) {
+                const mode = condition.address.mode === 'insensitive' ? 'i' : '';
+                const escapedSearch = condition.address.contains.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const regex = new RegExp(escapedSearch, mode);
+                return regex.test(prop.address || '');
+              }
+              return false;
+            });
+            if (!matchesAny) return false;
+          }
           
           // Price range
-          if (where.price?.gte && prop.price < where.price.gte) return false;
-          if (where.price?.lte && prop.price > where.price.lte) return false;
+          if (where.price?.gte !== undefined) {
+            const minPrice = Number(where.price.gte);
+            if (!isNaN(minPrice) && Number(prop.price) < minPrice) return false;
+          }
+          if (where.price?.lte !== undefined) {
+            const maxPrice = Number(where.price.lte);
+            if (!isNaN(maxPrice) && Number(prop.price) > maxPrice) return false;
+          }
           
           // Bedrooms range
           if (where.bedrooms?.gte && prop.bedrooms < where.bedrooms.gte) return false;
           if (where.bedrooms?.lte && prop.bedrooms > where.bedrooms.lte) return false;
+          
+          // Bathrooms range
+          if (where.bathrooms?.gte && prop.bathrooms < where.bathrooms.gte) return false;
+          if (where.bathrooms?.lte && prop.bathrooms > where.bathrooms.lte) return false;
           
           return true;
         });
@@ -768,11 +1074,82 @@ export const mockDb = {
     count: (options?: any) => {
       let results = [...mockProperties];
       
+      // Apply where filters - same as findMany
       if (options?.where) {
         const where = options.where;
         results = results.filter(prop => {
           if (where.published !== undefined && prop.published !== where.published) return false;
           if (where.featured !== undefined && prop.featured !== where.featured) return false;
+          
+          // City filter - support both exact match and contains
+          if (where.city) {
+            if (typeof where.city === 'string') {
+              if (prop.city !== where.city) return false;
+            } else if (where.city.contains) {
+              const mode = where.city.mode === 'insensitive' ? 'i' : '';
+              const regex = new RegExp(where.city.contains, mode);
+              if (!regex.test(prop.city || '')) return false;
+            }
+          }
+          
+          if (where.propertyType && prop.propertyType !== where.propertyType) return false;
+          
+          // ListingType filter - support both exact match and contains
+          if (where.listingType) {
+            if (typeof where.listingType === 'string') {
+              if (prop.listingType !== where.listingType) return false;
+            } else if (where.listingType.contains) {
+              const mode = where.listingType.mode === 'insensitive' ? 'i' : '';
+              const regex = new RegExp(where.listingType.contains, mode);
+              if (!regex.test(prop.listingType || '')) return false;
+            }
+          }
+          
+          // OR filter for search
+          if (where.OR) {
+            const orConditions = where.OR;
+            const matchesAny = orConditions.some((condition: Record<string, any>) => {
+              if (condition.title?.contains) {
+                const mode = condition.title.mode === 'insensitive' ? 'i' : '';
+                const escapedSearch = condition.title.contains.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const regex = new RegExp(escapedSearch, mode);
+                return regex.test(prop.title || '');
+              }
+              if (condition.description?.contains) {
+                const mode = condition.description.mode === 'insensitive' ? 'i' : '';
+                const escapedSearch = condition.description.contains.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const regex = new RegExp(escapedSearch, mode);
+                return regex.test(prop.description || '');
+              }
+              if (condition.address?.contains) {
+                const mode = condition.address.mode === 'insensitive' ? 'i' : '';
+                const escapedSearch = condition.address.contains.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const regex = new RegExp(escapedSearch, mode);
+                return regex.test(prop.address || '');
+              }
+              return false;
+            });
+            if (!matchesAny) return false;
+          }
+          
+          // Price range
+          if (where.price?.gte !== undefined) {
+            const minPrice = Number(where.price.gte);
+            if (!isNaN(minPrice) && Number(prop.price) < minPrice) return false;
+          }
+          if (where.price?.lte !== undefined) {
+            const maxPrice = Number(where.price.lte);
+            if (!isNaN(maxPrice) && Number(prop.price) > maxPrice) return false;
+          }
+          
+          // Bedrooms range
+          if (where.bedrooms?.gte && prop.bedrooms < where.bedrooms.gte) return false;
+          if (where.bedrooms?.lte && prop.bedrooms > where.bedrooms.lte) return false;
+          
+          // Bathrooms range
+          if (where.bathrooms?.gte && prop.bathrooms < where.bathrooms.gte) return false;
+          if (where.bathrooms?.lte && prop.bathrooms > where.bathrooms.lte) return false;
+          
           return true;
         });
       }
