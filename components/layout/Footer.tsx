@@ -124,17 +124,17 @@ export function Footer() {
               <ul className="space-y-3 text-gray-600 text-sm">
                 <li>
                   <Link href="/" className="hover:text-accent transition-colors">
-                    Meistä
+                    Ota yhteyttä
                   </Link>
                 </li>
                 <li>
                   <Link href="/properties" className="hover:text-accent transition-colors">
-                    Kokoelma
+                    Kohteet
                   </Link>
                 </li>
                 <li>
                   <Link href="/blog" className="hover:text-accent transition-colors">
-                    Blogi & Uutiset
+                    Blogi 
                   </Link>
                 </li>
               </ul>

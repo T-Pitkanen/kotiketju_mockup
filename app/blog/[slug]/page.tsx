@@ -57,7 +57,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* Title Overlay */}
         <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10">
           <div className="max-w-4xl mx-auto">
-            <span className="inline-block text-white px-4 py-2 rounded-full text-sm font-semibold mb-4" style={{ backgroundColor: '#f59e0b' }}>
+            <span className="inline-block text-white px-4 py-2 rounded-full text-sm font-semibold mb-4" style={{ backgroundColor: '#284b63' }}>
               {post.category}
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-2xl">
@@ -113,7 +113,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <Link
             href="/blog"
             className="inline-block text-white px-8 py-4 rounded-xl font-semibold hover:shadow-xl transition-all"
-            style={{ backgroundColor: '#f59e0b' }}
+            style={{ backgroundColor: '#284b63' }}
           >
             Näytä kaikki artikkelit
           </Link>

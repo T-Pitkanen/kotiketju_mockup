@@ -101,7 +101,7 @@ export function ContactForm() {
                     }
                     placeholder="Etunimi"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -123,7 +123,7 @@ export function ContactForm() {
                     }
                     placeholder="Sukunimi"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
                   />
                 </div>
               </div>
@@ -145,7 +145,7 @@ export function ContactForm() {
                   }
                   placeholder="sinä@yritys.fi"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
                 />
               </div>
 
@@ -158,7 +158,7 @@ export function ContactForm() {
                   Puhelinnumero
                 </label>
                 <div className="flex gap-2">
-                  <select className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent">
+                  <select className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
                     <option>FI</option>
                     <option>US</option>
                     <option>UK</option>
@@ -175,7 +175,7 @@ export function ContactForm() {
                       }))
                     }
                     placeholder="+1 (555) 000-0000"
-                    className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
+                    className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
                   />
                 </div>
               </div>
@@ -199,7 +199,7 @@ export function ContactForm() {
                   }
                   placeholder="Jätä meille viesti..."
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent resize-none"
                 />
               </div>
 
@@ -225,7 +225,7 @@ export function ContactForm() {
                         type="checkbox"
                         checked={formData.services.includes(service)}
                         onChange={() => handleServiceToggle(service)}
-                        className="w-4 h-4 text-amber-600 border-gray-300 rounded focus:ring-amber-600"
+                        className="w-4 h-4 text-accent border-gray-300 rounded focus:ring-accent"
                       />
                       <span className="text-sm text-gray-700">{service}</span>
                     </label>
@@ -274,7 +274,7 @@ export function ContactForm() {
               <div className="space-y-3">
                 <a
                   href="#"
-                  className="flex items-center gap-2 text-gray-900 hover:text-amber-600 transition-colors"
+                  className="flex items-center gap-2 text-gray-900 hover:text-accent transition-colors"
                 >
                   <svg
                     className="w-5 h-5"
@@ -293,7 +293,7 @@ export function ContactForm() {
                 </a>
                 <a
                   href="mailto:hello@kotiketju.fi"
-                  className="flex items-center gap-2 text-gray-900 hover:text-amber-600 transition-colors"
+                  className="flex items-center gap-2 text-gray-900 hover:text-accent transition-colors"
                 >
                   <svg
                     className="w-5 h-5"
@@ -312,7 +312,7 @@ export function ContactForm() {
                 </a>
                 <a
                   href="#"
-                  className="flex items-center gap-2 text-gray-900 hover:text-amber-600 transition-colors"
+                  className="flex items-center gap-2 text-gray-900 hover:text-accent transition-colors"
                 >
                   <svg
                     className="w-5 h-5"
@@ -336,7 +336,7 @@ export function ContactForm() {
               </p>
               <a
                 href="tel:+358401234567"
-                className="flex items-center gap-2 text-gray-900 hover:text-amber-600 transition-colors"
+                className="flex items-center gap-2 text-gray-900 hover:text-accent transition-colors"
               >
                 <svg
                   className="w-5 h-5"
@@ -368,7 +368,7 @@ export function ContactForm() {
                 href="https://maps.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-gray-900 hover:text-amber-600 transition-colors"
+                className="flex items-center gap-2 text-gray-900 hover:text-accent transition-colors"
               >
                 <svg
                   className="w-5 h-5"

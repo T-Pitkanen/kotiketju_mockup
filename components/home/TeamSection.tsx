@@ -69,7 +69,7 @@ export function TeamSection() {
                 {/* Facebook */}
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-gray-100 hover:bg-amber-600 flex items-center justify-center transition-colors group/icon"
+                  className="w-8 h-8 rounded-full bg-gray-100 hover:bg-accent flex items-center justify-center transition-colors group/icon"
                   aria-label="Facebook"
                 >
                   <svg className="w-4 h-4 text-gray-700 group-hover/icon:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
@@ -80,7 +80,7 @@ export function TeamSection() {
                 {/* LinkedIn */}
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-gray-100 hover:bg-amber-600 flex items-center justify-center transition-colors group/icon"
+                  className="w-8 h-8 rounded-full bg-gray-100 hover:bg-accent flex items-center justify-center transition-colors group/icon"
                   aria-label="LinkedIn"
                 >
                   <svg className="w-4 h-4 text-gray-700 group-hover/icon:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
@@ -91,7 +91,7 @@ export function TeamSection() {
                 {/* Twitter/X */}
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-gray-100 hover:bg-amber-600 flex items-center justify-center transition-colors group/icon"
+                  className="w-8 h-8 rounded-full bg-gray-100 hover:bg-accent flex items-center justify-center transition-colors group/icon"
                   aria-label="Twitter"
                 >
                   <svg className="w-4 h-4 text-gray-700 group-hover/icon:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
