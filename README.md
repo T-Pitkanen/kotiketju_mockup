@@ -42,11 +42,6 @@ A modern, full-stack real estate platform built with Next.js 15, featuring prope
 
 ## 📦 Getting Started
 
-### Prerequisites
-- Node.js 18+ 
-- PostgreSQL database (or Supabase account)
-- Git
-
 ### Installation
 
 1. Clone the repository:
@@ -91,19 +86,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-## 🔐 Admin Access
-
-To create an admin user:
-
-1. Sign up through Supabase Auth
-2. In Supabase Dashboard, go to Authentication → Users
-3. Edit the user and add to `raw_user_meta_data`:
-```json
-{
-  "is_admin": true
-}
-```
-4. Access admin dashboard at `/admin` with your credentials
 
 ## 📁 Project Structure
 
@@ -125,32 +107,6 @@ To create an admin user:
 └── server/               # Server utilities
 ```
 
-## 🔒 Security Features
-
-- Environment variables for sensitive data
-- Row-level security (RLS) in Supabase
-- Admin authentication on all dashboard routes
-- Admin API route protection
-- Secure session handling with Supabase SSR
-- Input validation and sanitization
-
-## 🎨 Key Components
-
-- **TourBookingModal** - Calendar-based tour booking interface
-- **TourManagement** - Admin UI for managing tour availability
-- **PropertySearch** - Advanced property search with filters
-- **ChatBot** - AI-powered customer support
-- **DashboardStats** - Real-time statistics display
-
-## 📝 Database Models
-
-- **Property** - Real estate listings
-- **TourBooking** - Tour booking requests
-- **TourAvailability** - Available tour dates and time slots
-- **Realtor** - Real estate agent information
-- **GeneralContact** - General inquiry messages
-- **ContactMessage** - Realtor-specific messages
-- **Favorite** - User saved properties
 
 ## 🚀 Deployment
 
@@ -163,19 +119,6 @@ Start production server:
 ```bash
 npm start
 ```
-
-Deploy to Vercel (recommended):
-- Connect your GitHub repository to Vercel
-- Add environment variables in Vercel dashboard
-- Deploy automatically on push to main branch
-
-## 📄 License
-
-ISC
-
-## 👤 Author
-
-T-Pitkanen
 
 ## 🙏 Acknowledgments
 
